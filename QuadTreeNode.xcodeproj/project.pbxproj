@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD5854EF205130E400F5B53F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5854EE205130E400F5B53F /* AppDelegate.m */; };
+		CD5854F5205130E400F5B53F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5854F3205130E400F5B53F /* Main.storyboard */; };
+		CD5854F7205130E400F5B53F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5854F6205130E400F5B53F /* Assets.xcassets */; };
+		CD5854FA205130E400F5B53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5854F8205130E400F5B53F /* LaunchScreen.storyboard */; };
+		CD5854FD205130E400F5B53F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5854FC205130E400F5B53F /* main.m */; };
+		CD585507205130E400F5B53F /* QuadTreeNodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD585506205130E400F5B53F /* QuadTreeNodeTests.m */; };
+		CD585512205130E400F5B53F /* QuadTreeNodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD585511205130E400F5B53F /* QuadTreeNodeUITests.m */; };
+		CD585529205131C900F5B53F /* MapKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58551F205131C700F5B53F /* MapKitViewController.m */; };
+		CD58552A205131C900F5B53F /* TBQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CD585522205131C800F5B53F /* TBQuadTree.m */; };
+		CD58552B205131C900F5B53F /* TBCoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CD585523205131C800F5B53F /* TBCoordinateQuadTree.m */; };
+		CD58552C205131C900F5B53F /* TBClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD585526205131C800F5B53F /* TBClusterAnnotation.m */; };
+		CD58552D205131C900F5B53F /* TBClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD585528205131C900F5B53F /* TBClusterAnnotationView.m */; };
+		CD58552F2051320A00F5B53F /* USA-HotelMotel.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD58552E2051320A00F5B53F /* USA-HotelMotel.csv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD585503205130E400F5B53F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD5854E2205130E400F5B53F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD5854E9205130E400F5B53F;
+			remoteInfo = QuadTreeNode;
+		};
+		CD58550E205130E400F5B53F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD5854E2205130E400F5B53F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD5854E9205130E400F5B53F;
+			remoteInfo = QuadTreeNode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD5854EA205130E400F5B53F /* QuadTreeNode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuadTreeNode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5854ED205130E400F5B53F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD5854EE205130E400F5B53F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD5854F4205130E400F5B53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD5854F6205130E400F5B53F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD5854F9205130E400F5B53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD5854FB205130E400F5B53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5854FC205130E400F5B53F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD585502205130E400F5B53F /* QuadTreeNodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadTreeNodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD585506205130E400F5B53F /* QuadTreeNodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadTreeNodeTests.m; sourceTree = "<group>"; };
+		CD585508205130E400F5B53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD58550D205130E400F5B53F /* QuadTreeNodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadTreeNodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD585511205130E400F5B53F /* QuadTreeNodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadTreeNodeUITests.m; sourceTree = "<group>"; };
+		CD585513205130E400F5B53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD58551F205131C700F5B53F /* MapKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapKitViewController.m; sourceTree = "<group>"; };
+		CD585520205131C700F5B53F /* TBCoordinateQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCoordinateQuadTree.h; sourceTree = "<group>"; };
+		CD585521205131C700F5B53F /* TBClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBClusterAnnotationView.h; sourceTree = "<group>"; };
+		CD585522205131C800F5B53F /* TBQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBQuadTree.m; sourceTree = "<group>"; };
+		CD585523205131C800F5B53F /* TBCoordinateQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCoordinateQuadTree.m; sourceTree = "<group>"; };
+		CD585524205131C800F5B53F /* MapKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitViewController.h; sourceTree = "<group>"; };
+		CD585525205131C800F5B53F /* TBClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBClusterAnnotation.h; sourceTree = "<group>"; };
+		CD585526205131C800F5B53F /* TBClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBClusterAnnotation.m; sourceTree = "<group>"; };
+		CD585527205131C900F5B53F /* TBQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBQuadTree.h; sourceTree = "<group>"; };
+		CD585528205131C900F5B53F /* TBClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBClusterAnnotationView.m; sourceTree = "<group>"; };
+		CD58552E2051320A00F5B53F /* USA-HotelMotel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "USA-HotelMotel.csv"; sourceTree = "<group>"; };
+		CD5855302051321C00F5B53F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD5854E7205130E400F5B53F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5854FF205130E400F5B53F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD58550A205130E400F5B53F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD5854E1205130E400F5B53F = {
+			isa = PBXGroup;
+			children = (
+				CD5854EC205130E400F5B53F /* QuadTreeNode */,
+				CD585505205130E400F5B53F /* QuadTreeNodeTests */,
+				CD585510205130E400F5B53F /* QuadTreeNodeUITests */,
+				CD5854EB205130E400F5B53F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD5854EB205130E400F5B53F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD5854EA205130E400F5B53F /* QuadTreeNode.app */,
+				CD585502205130E400F5B53F /* QuadTreeNodeTests.xctest */,
+				CD58550D205130E400F5B53F /* QuadTreeNodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD5854EC205130E400F5B53F /* QuadTreeNode */ = {
+			isa = PBXGroup;
+			children = (
+				CD5854ED205130E400F5B53F /* AppDelegate.h */,
+				CD5854EE205130E400F5B53F /* AppDelegate.m */,
+				CD585524205131C800F5B53F /* MapKitViewController.h */,
+				CD58551F205131C700F5B53F /* MapKitViewController.m */,
+				CD585527205131C900F5B53F /* TBQuadTree.h */,
+				CD585522205131C800F5B53F /* TBQuadTree.m */,
+				CD585520205131C700F5B53F /* TBCoordinateQuadTree.h */,
+				CD585523205131C800F5B53F /* TBCoordinateQuadTree.m */,
+				CD585525205131C800F5B53F /* TBClusterAnnotation.h */,
+				CD585526205131C800F5B53F /* TBClusterAnnotation.m */,
+				CD585521205131C700F5B53F /* TBClusterAnnotationView.h */,
+				CD585528205131C900F5B53F /* TBClusterAnnotationView.m */,
+				CD5855302051321C00F5B53F /* PrefixHeader.pch */,
+				CD58552E2051320A00F5B53F /* USA-HotelMotel.csv */,
+				CD5854F3205130E400F5B53F /* Main.storyboard */,
+				CD5854F6205130E400F5B53F /* Assets.xcassets */,
+				CD5854F8205130E400F5B53F /* LaunchScreen.storyboard */,
+				CD5854FB205130E400F5B53F /* Info.plist */,
+				CD5854FC205130E400F5B53F /* main.m */,
+			);
+			path = QuadTreeNode;
+			sourceTree = "<group>";
+		};
+		CD585505205130E400F5B53F /* QuadTreeNodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD585506205130E400F5B53F /* QuadTreeNodeTests.m */,
+				CD585508205130E400F5B53F /* Info.plist */,
+			);
+			path = QuadTreeNodeTests;
+			sourceTree = "<group>";
+		};
+		CD585510205130E400F5B53F /* QuadTreeNodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD585511205130E400F5B53F /* QuadTreeNodeUITests.m */,
+				CD585513205130E400F5B53F /* Info.plist */,
+			);
+			path = QuadTreeNodeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD5854E9205130E400F5B53F /* QuadTreeNode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD585516205130E400F5B53F /* Build configuration list for PBXNativeTarget "QuadTreeNode" */;
+			buildPhases = (
+				CD5854E6205130E400F5B53F /* Sources */,
+				CD5854E7205130E400F5B53F /* Frameworks */,
+				CD5854E8205130E400F5B53F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuadTreeNode;
+			productName = QuadTreeNode;
+			productReference = CD5854EA205130E400F5B53F /* QuadTreeNode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD585501205130E400F5B53F /* QuadTreeNodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD585519205130E400F5B53F /* Build configuration list for PBXNativeTarget "QuadTreeNodeTests" */;
+			buildPhases = (
+				CD5854FE205130E400F5B53F /* Sources */,
+				CD5854FF205130E400F5B53F /* Frameworks */,
+				CD585500205130E400F5B53F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD585504205130E400F5B53F /* PBXTargetDependency */,
+			);
+			name = QuadTreeNodeTests;
+			productName = QuadTreeNodeTests;
+			productReference = CD585502205130E400F5B53F /* QuadTreeNodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD58550C205130E400F5B53F /* QuadTreeNodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD58551C205130E400F5B53F /* Build configuration list for PBXNativeTarget "QuadTreeNodeUITests" */;
+			buildPhases = (
+				CD585509205130E400F5B53F /* Sources */,
+				CD58550A205130E400F5B53F /* Frameworks */,
+				CD58550B205130E400F5B53F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD58550F205130E400F5B53F /* PBXTargetDependency */,
+			);
+			name = QuadTreeNodeUITests;
+			productName = QuadTreeNodeUITests;
+			productReference = CD58550D205130E400F5B53F /* QuadTreeNodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD5854E2205130E400F5B53F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ginlong;
+				TargetAttributes = {
+					CD5854E9205130E400F5B53F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CD585501205130E400F5B53F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD5854E9205130E400F5B53F;
+					};
+					CD58550C205130E400F5B53F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD5854E9205130E400F5B53F;
+					};
+				};
+			};
+			buildConfigurationList = CD5854E5205130E400F5B53F /* Build configuration list for PBXProject "QuadTreeNode" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD5854E1205130E400F5B53F;
+			productRefGroup = CD5854EB205130E400F5B53F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD5854E9205130E400F5B53F /* QuadTreeNode */,
+				CD585501205130E400F5B53F /* QuadTreeNodeTests */,
+				CD58550C205130E400F5B53F /* QuadTreeNodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD5854E8205130E400F5B53F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5854FA205130E400F5B53F /* LaunchScreen.storyboard in Resources */,
+				CD5854F7205130E400F5B53F /* Assets.xcassets in Resources */,
+				CD5854F5205130E400F5B53F /* Main.storyboard in Resources */,
+				CD58552F2051320A00F5B53F /* USA-HotelMotel.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD585500205130E400F5B53F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD58550B205130E400F5B53F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD5854E6205130E400F5B53F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5854FD205130E400F5B53F /* main.m in Sources */,
+				CD58552D205131C900F5B53F /* TBClusterAnnotationView.m in Sources */,
+				CD58552B205131C900F5B53F /* TBCoordinateQuadTree.m in Sources */,
+				CD58552C205131C900F5B53F /* TBClusterAnnotation.m in Sources */,
+				CD5854EF205130E400F5B53F /* AppDelegate.m in Sources */,
+				CD58552A205131C900F5B53F /* TBQuadTree.m in Sources */,
+				CD585529205131C900F5B53F /* MapKitViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5854FE205130E400F5B53F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD585507205130E400F5B53F /* QuadTreeNodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD585509205130E400F5B53F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD585512205130E400F5B53F /* QuadTreeNodeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD585504205130E400F5B53F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD5854E9205130E400F5B53F /* QuadTreeNode */;
+			targetProxy = CD585503205130E400F5B53F /* PBXContainerItemProxy */;
+		};
+		CD58550F205130E400F5B53F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD5854E9205130E400F5B53F /* QuadTreeNode */;
+			targetProxy = CD58550E205130E400F5B53F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD5854F3205130E400F5B53F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5854F4205130E400F5B53F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD5854F8205130E400F5B53F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5854F9205130E400F5B53F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD585514205130E400F5B53F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD585515205130E400F5B53F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD585517205130E400F5B53F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNZCYC8M4N;
+				GCC_PREFIX_HEADER = QuadTreeNode/PrefixHeader.pch;
+				INFOPLIST_FILE = QuadTreeNode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.QuadTreeNode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD585518205130E400F5B53F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNZCYC8M4N;
+				GCC_PREFIX_HEADER = QuadTreeNode/PrefixHeader.pch;
+				INFOPLIST_FILE = QuadTreeNode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.QuadTreeNode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD58551A205130E400F5B53F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuadTreeNodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.QuadTreeNodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuadTreeNode.app/QuadTreeNode";
+			};
+			name = Debug;
+		};
+		CD58551B205130E400F5B53F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuadTreeNodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.QuadTreeNodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuadTreeNode.app/QuadTreeNode";
+			};
+			name = Release;
+		};
+		CD58551D205130E400F5B53F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuadTreeNodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.QuadTreeNodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuadTreeNode;
+			};
+			name = Debug;
+		};
+		CD58551E205130E400F5B53F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuadTreeNodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.QuadTreeNodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuadTreeNode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD5854E5205130E400F5B53F /* Build configuration list for PBXProject "QuadTreeNode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD585514205130E400F5B53F /* Debug */,
+				CD585515205130E400F5B53F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD585516205130E400F5B53F /* Build configuration list for PBXNativeTarget "QuadTreeNode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD585517205130E400F5B53F /* Debug */,
+				CD585518205130E400F5B53F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD585519205130E400F5B53F /* Build configuration list for PBXNativeTarget "QuadTreeNodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD58551A205130E400F5B53F /* Debug */,
+				CD58551B205130E400F5B53F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD58551C205130E400F5B53F /* Build configuration list for PBXNativeTarget "QuadTreeNodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD58551D205130E400F5B53F /* Debug */,
+				CD58551E205130E400F5B53F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD5854E2205130E400F5B53F /* Project object */;
+}
